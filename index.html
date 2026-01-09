@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMS login</title>
+    <link rel="stylesheet" href="greeting.css">
+</head>
+<body>
+    <main>
+        <div class="top-logo">
+        <h1><span class="hos-name">TRINITY SUPERSPECIALITY</span>
+          <div class="eye"><img src="https://st5.depositphotos.com/18270392/83436/v/450/depositphotos_834361332-stock-illustration-human-eye-icon-vision-eyeball.jpg" alt="logo-eye">
+            <div class="cornea"></div></div>
+           <span class="eye-letter">E<span class="eye-letter-y">Y</span>E</span> <br>
+            <span class="hospital">Hospital</span>
+        </h1>
+        </div>
+        <div class="form-block">
+            <form action="POST">
+                <div class="employee-id">
+                <label for="E-id">Employee ID:</label>
+                <input type="text" name="employee-id" id="E-id" placeholder="TEH-your id here" required minlength="7">
+                </div>
+                <div class="password">
+                <label for="password">Password:</label>
+                <input type="text" name="password" id="password" placeholder="Password or 123" required minlength="3" title="min 3 characters">
+                </div>
+                <div class="branch">
+                <label for="branch">Branch:</label>
+                <select name="branch" id="branch" required>
+                    <option value="" selected disabled>Select the Branch</option>
+                    <option value="1">Coimbatore</option>
+                    <option value="2">Salem</option>
+                    <option value="3">Madurai</option>
+                </select>
+                </div>
+                <div class="dept">
+                <label for="dept">Department:</label>
+                <select name="dept" id="dept" required>
+                    <option value="" disabled selected>Select Department</option>
+                    <option value="1">Pharmacy</option>
+                    <option value="2">Opticals</option>
+                    <option value="3">Reception</option>
+                    <option value="4">optometry</option>
+                </select>
+                </div>
+                <div class="login">
+                <button type="submit" >Log In</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
